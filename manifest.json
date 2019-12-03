@@ -1,0 +1,7 @@
+{
+  "name": "text-lint",
+  "id": "783652774232391571",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html"
+}
