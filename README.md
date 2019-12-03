@@ -26,3 +26,26 @@ webpackを使って、bundleしているので、開発ではsrc/配下のファ
 code.ts以外はReactです。
 src/配下のフォルダを編集すると`npx webpack --mode=development --watch`
 が監視してくれるので、自動でdist/配下のファイルも更新されます。
+
+# Lint
+
+ESlintでsrc/配下のファイルのコードをチェック。引っかかるとエラーが出ます。
+ルールは.eslintrc.jsonのrulesをみてください。
+
+```$xslt
+npm run eslint
+```
+
+エラーを修正
+
+```$xslt
+npm run eslint:fix
+```
+
+または、prettier使って（ESlintと競合するかもだけど）
+
+```$xslt
+npm run prettier
+```
+
+でコードがフォーマットされます。
